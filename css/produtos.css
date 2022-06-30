@@ -1,0 +1,101 @@
+.produtos__secao {
+    font-weight: 700;
+    padding: 0 1rem 1rem 1rem;
+}
+
+
+.produtos__secao__inicio {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produtos__secao__inicio--titulo {
+    color: var(--preto);
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.produtos__secao__inicio--ver {
+    background-color: var(--branco);
+    border: none;
+    color: var(--azul);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: none;
+    text-decoration: none;
+}
+
+.produtos__secao__inicio--ver::after {
+    content: url("../img/seta.svg");
+    height: 1rem;
+}
+
+.produto__skill {
+    height: 174px;
+    object-fit: cover;
+    width: 100%;
+}
+.produto__nome {
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+.produto__preco {
+    color: var(--preto);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: .5rem 0;
+}
+
+.produto__ver {
+    background-color: var(--branco);
+    border: none;
+    color: var(--azul);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: none;
+    padding: 0.1rem 0;
+    text-decoration: none;
+}
+
+
+.produtos {
+    display: grid;
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill,minmax(9rem, 1fr));
+    row-gap: 0.5rem;
+}
+
+.produto {
+    display: grid;
+    grid-template-areas:
+        "produto-imagem"
+        "produto-corpo";
+    grid-template-columns: 100%;
+    width: calc(50%-0.5rem);
+}
+
+@media (max-width: 320px) {
+    .produtos {
+        display: grid;
+        column-gap: 0.5rem;
+        grid-template-columns: repeat(auto-fill,minmax(8rem, 1fr));
+        row-gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .produto__5,
+    .produto__6 {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .produtos__secao {
+        padding: 0 3rem 1rem 3rem;
+    }
+}

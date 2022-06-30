@@ -1,0 +1,18 @@
+:root {
+    font-family: 'Raleway', sans-serif;
+    
+    --branco: #FFFFFF;
+    --azul: #2A7AE4;
+    --azul-claro: #EAF2FD;
+    --preto: #464646; 
+    --cinza: #F5F5F5;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

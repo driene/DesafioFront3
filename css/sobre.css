@@ -1,0 +1,134 @@
+.sobre-contato {
+    background-color: var(--azul-claro);
+    padding: 1rem;
+}
+
+.sobre-contato__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 12rem;
+}
+
+.sobre-contato__sobre::marker {
+    content: none;
+}
+
+.sobre-contato__sobre {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.sobre-contato__sobre--item {
+    padding: 0.8rem;  
+    text-decoration: none;
+}
+
+.sobre-contato__fale__titulo {
+    color: var(--preto);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.label {
+    position: relative;
+}
+
+.sobre-contato__fale__form input {
+    border: none;
+    border-radius: 4px;
+    height: 3.5rem;
+    margin: 1rem 0;
+    outline: none;
+    padding: 0.5rem;    
+    width: calc(100% - 1rem);
+}
+
+.sobre-contato__fale__form textarea {
+    border: solid var(--branco);
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    width: calc(100% - 0.5rem);
+}
+
+.sobre-contato__fale__form span {
+    left: 0.3rem;
+    position: absolute;
+    opacity: 0.7;
+    pointer-events: none;
+    top: 1.5rem;
+}
+
+.sobre-contato__fale__form--botao {
+    background-color: var(--azul);
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    height: 2.5rem; 
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    width: 8rem;
+}
+
+
+@media  (min-width: 768px){
+    
+    .sobre-contato a {
+        grid-area: logo;
+    }
+    
+    .sobre {
+       
+        grid-area: itens;
+        width: auto;
+    }
+    
+    .sobre-contato__fale {
+        grid-area: fale;
+    }
+    
+    .sobre-contato {
+        display: grid;
+        grid-template-areas: 
+            "logo fale fale fale"
+            "itens fale fale fale";
+    }
+
+    .sobre-contato__sobre {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .sobre-contato__logo {
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .sobre-contato__fale input {
+        height: 2.5rem;
+    }
+
+    .sobre-contato__fale textarea {
+        height: 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sobre-contato {
+           display: grid;
+           grid-template-columns: 25% 25% 50%;
+           padding: 2rem 4rem;
+           grid-template-areas: 
+            "logo itens fale";
+            
+        }
+   
+}
