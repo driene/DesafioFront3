@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
+    <title>Produto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/produtoDestaque.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -34,28 +34,32 @@
                 <button class="cabecalho__barra-pesquisa--pesquisar"><img src="img/lupa.svg" alt="Procurar"></button>
             </div>
         </div>
+        
         <button class="cabecalho__procurar"><img src="img/lupa-preta.svg" alt="Procurar"></button>
     </header>
 
     <main>
-        <section class="banner caixa">
-            <h1 class="banner__chamada">Dezembro Promocional</h1>
-            <p class="banner__explicacao">Produtos selecionados com 33% de desconto</p>
-            <button class="banner__botao" href="#">Ver Consoles</button>
+        <section class="destaque">
+            <img src="img/stormtrooper-mug.jpg" alt="Caneca Stormtrooper" class="destaque__img">
+            <div class="destaque__infos">
+                <h1 class="destaque__infos__nome">Produto XYZ</h1>
+                <p class="destaque__infos__preco">R$ 60,00</p>
+                <a href="" class="destaque__infos__descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium doloribus excepturi vero officia commodi, rerum, totam illum similique hic mollitia inventore aliquam cumque? Eveniet animi harum est odit libero excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam impedit voluptatem ullam laborum quaerat, maiores pariatur quisquam facilis vitae cumque autem a provident. Veniam cupiditate ducimus pariatur? Accusamus, consectetur pariatur.</a>
+            </div>
         </section>
 
         <section class="produtos__secao">
 
             <div class="produtos__secao__inicio">
-                <h2 class="produtos__secao__inicio--titulo">Todos os produtos</h2>
-                <a href="#" class="produtos__secao__inicio--ver">Ver tudo  </a>
+                <h2 class="produtos__secao__inicio--titulo">Produtos similares</h2>               
             </div>
 
             <div class="produtos">
                 <article class="produto produto__1">
-                    <img class="produto__skill" src="img/stormtrooper-mug.jpg" alt="Caneca Stormtrooper">
+                    <img class="produto__skill" src="img/xbox-one-white-controller.jpg"
+                        alt="Controle branco co XBox One">
                     <div class="produto__infos">
-                        <h3 class="produto__nome">Produto XYZ</h3>
+                        <h3 class="produto__nome">Controle XYZ</h3>
                         <p class="produto__preco">R$60,00</p>
                         <a href="#" class="produto__ver">Ver produto</a>
                     </div>
@@ -105,117 +109,9 @@
                         <a href="#" class="produto__ver">Ver produto</a>
                     </div>
                 </article>
-                
-                <article class="produto produto__1">
-                    <img class="produto__skill" src="img/xbox-one-white-controller.jpg"
-                        alt="Controle branco co XBox One">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Controle XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__2">
-                    <img class="produto__skill" src="img/ps5-white-with-controller.jpg" alt="PS5 com controle">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Controle e console XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__3">
-                    <img class="produto__skill" src="img/nes-console.jpg" alt="NES nes-console">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Console XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__4">
-                    <img class="produto__skill" src="img/switch-controllers.jpg" alt="Controles Switch">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Controle XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__5">
-                    <img class="produto__skill" src="img/xbox-one.jpg" alt="XBox one">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Console XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__6">
-                    <img class="produto__skill" src="img/gameboy.jpg" alt="Gameboy">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Game Boy Color</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__1">
-                    <img class="produto__skill" src="img/atari-shirt.jpg" alt="Camisa Atari">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Camisa Atari</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__2">
-                    <img class="produto__skill" src="img/nes-shirt.jpg" alt="Camisa SNES">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Camisa SNES</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__3">
-                    <img class="produto__skill" src="img/sonic-tails-statue.jpg" alt="Controle e console XYZ">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Controle e console XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__4">
-                    <img class="produto__skill" src="img/pink-clock-radio.jpg" alt="Rádio despertador rosa">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Controle e console XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__5">
-                    <img class="produto__skill" src="img/ps-vr.jpg" alt="PS - VR">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Controle e console XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
-
-                <article class="produto produto__6">
-                    <img class="produto__skill" src="img/pikachu-plush.jpg" alt="Controle e console XYZ">
-                    <div class="produto__infos">
-                        <h3 class="produto__nome">Controle e console XYZ</h3>
-                        <p class="produto__preco">R$60,00</p>
-                        <a href="#" class="produto__ver">Ver produto</a>
-                    </div>
-                </article>
             </div>
         </section>
+
         <section class="sobre-contato">
             
             <a href="#"><img src="img/logo.svg" alt="Logo Akura Geek" class="sobre-contato__logo"></a>
@@ -250,7 +146,6 @@
                         <button class="sobre-contato__fale__form--botao" type="submit">Enviar mensagem</button>
                 </form>
             </div>
-
         </section>
     </main>
 

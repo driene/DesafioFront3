@@ -1,6 +1,7 @@
 .produtos__secao {
     font-weight: 700;
     padding: 0 1rem 1rem 1rem;
+    background-color: var(--cinza);
 }
 
 
@@ -51,7 +52,7 @@
 }
 
 .produto__ver {
-    background-color: var(--branco);
+    background-color: var(--cinza);
     border: none;
     color: var(--azul);
     font-size: 0.8rem;
